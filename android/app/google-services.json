@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "967601442387",
+    "project_id": "login-firebase-salal",
+    "storage_bucket": "login-firebase-salal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967601442387:android:0067cb02e6d02877a5c0a6",
+        "android_client_info": {
+          "package_name": "com.example.login_firebase_1st"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967601442387-dq6ljlprhq1fgp1580l1cde9fd2t98hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvnSu_xZkalsiy6SveRiWLBNYDE5mkeHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967601442387-dq6ljlprhq1fgp1580l1cde9fd2t98hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
