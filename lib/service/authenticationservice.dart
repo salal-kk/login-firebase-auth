@@ -47,5 +47,32 @@ class AuthService {
     }
   }
 
+
+  // Future<String?> signOut({
+  //   required String email,
+  //   required String password,
+  // }) async {
+     
+  //     await FirebaseAuth.instance.signOut(
+        
+  //     );
+  //     return 'Success';
+  //   }
+
+
+
+ final FirebaseAuth auth = FirebaseAuth.instance;
+  //signout function 
+  Future <String?> signOut() async {
+    await auth.signOut();
+    return 'Success' ;
+   
+  }
+
+
+
+
+
+
   static getToken() {}
 }

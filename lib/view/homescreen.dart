@@ -3,6 +3,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:login_firebase_1st/service/authenticationservice.dart';
+import 'package:login_firebase_1st/view/loginscreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -94,7 +96,23 @@ class HomeScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 18.0),
                   child: ElevatedButton(
-                    onPressed: () => FirebaseAuth.instance.signOut(),
+                    onPressed:() async {
+                                  final message = await AuthService().signOut() ;
+
+                                  if (message!.contains('Success')) {
+                                  
+                                    Navigator.of(context).pushReplacement(
+                                      MaterialPageRoute(
+                                        builder: (context) => LoginScreen(),
+                                      ),
+                                    );
+                                  }
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(message),
+                                    ),
+                                  );
+                                },
                     child: Text(
                       "LogOut",
                       style: TextStyle(
