@@ -81,7 +81,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           // ignore: prefer_const_literals_to_create_immutables
                           children: <TextSpan>[
                             TextSpan(
-                              text: "Welcome Dashboard\n",
+                              text: "SignUp Dashboard\n",
                               style: TextStyle(
                                 fontSize: 30,
                                 fontWeight: FontWeight.w700,

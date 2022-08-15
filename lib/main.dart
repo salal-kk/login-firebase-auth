@@ -19,5 +19,5 @@ Future<void> main() async {
           primaryColorDark: Colors.blueGrey.shade900,
           primaryColorLight: Colors.blueGrey),
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen()));
+      home:  LoginScreen()));
 }
